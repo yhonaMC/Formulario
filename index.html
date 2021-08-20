@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estyle.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center animate__backInRight">Formulario</h1>
+        <p id="description" class="description text-center animate__backInRight" > Que area de la tecnologia te gusta mas</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="name-label" for="name">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            class="form-control"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Correo</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Ingresa tu Email"
+            pattern=".+@gmail\.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Edad<span class="clue">(opcional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Edad"
+          />
+        </div>
+        <div class="form-group">
+          <p id="preguntaSelect">Que te gustaria estudiar?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecciona tu perfil</option>
+            <option value="frontEnd">Front-end</option>
+            <option value="backEnd">Back-end</option>
+            <option value="fullStack">Full Stack</option>
+            <option value="DataAnalytics">Data analytics</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+            <p id="level">Que nivel crees que tienes en la programacion?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Bajo"
+                type="radio"
+                class="input-radio"
+                checked
+              />Bajo</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="Medio"
+                type="radio"
+                class="input-radio"
+              />Medio</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="Alto"
+                type="radio"
+                class="input-radio"
+              />Alto</label
+            >
+          </div>
+      
+        <div class="form-group">
+          <p id="perfil">
+            ¿Por qué decidiste estudiar este perfil?
+            <span class="clue"></span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            />Por que me encanta la tecnologia</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Por que deseo crear mis propias paginas web"
+              type="checkbox"
+              class="input-checkbox"
+            />Por que deseo crear mis propias paginas web</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Por que Me causa algo de curiosidad el mundo de la tecnologia"
+              type="checkbox"
+              class="input-checkbox"
+            />Por que Me causa algo de curiosidad el mundo de la tecnologia</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Solo quiero conocer del mundo tecnologico"
+              type="checkbox"
+              class="input-checkbox"
+            />Solo quiero conocer del mundo tecnologico</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Ningunas de las anteriores"
+              type="checkbox"
+              class="input-checkbox"
+            />Ningunas de las anteriores</label
+          >
+       
+
+        <div class="form-group">
+          <p id="comment">Agrega observaciones y preguntas</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Ingresa tu comentario o pregunta"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button animate__flipOutY">
+            Enviar informacion
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
